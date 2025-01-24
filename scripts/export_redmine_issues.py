@@ -46,7 +46,7 @@ if response_assigned.status_code == 200 and response_reported.status_code == 200
 
     # CSVファイルの作成
     with open(
-        "redmine_my_assigned_and_reported_tickets.csv",
+        "redmine_my_tickets.csv",
         mode="w",
         newline="",
         encoding="utf-8",
@@ -85,7 +85,7 @@ if response_assigned.status_code == 200 and response_reported.status_code == 200
                 ]
             )
 
-    print("CSVファイル 'redmine_my_assigned_and_reported_tickets.csv' を作成しました。")
+    print("CSVファイル 'redmine_my_tickets.csv' を作成しました。")
 
 else:
     print(f"Error: {response_assigned.status_code} - {response_assigned.text}")
